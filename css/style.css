@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.container {
+  width: 80%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f7f1f1;
+}
+
+section {
+  margin: 5% 0;
+}
+
+.section-title::after {
+  content: '';
+  background-color: #eeee04;
+  width: 15%;
+  height: 5px;
+  display: block;
+  position: absolute;
+  left: 43%;
+  border-radius: 20px;
+  margin: 1% 0;
+}
+
+.banner-container .banner-text h2 span {
+  color: #FFC107;
+  font-weight: bold;
+}
+
+.banner-container .banner-text button {
+  background-color: #8000ff;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 3px 10px grey;
+  padding: 2% 5%;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.banner-container .banner-text button:hover {
+  background-color: #b366ff;
+  color: #222;
+}
+
+.banner-container .banner-text button:hover {
+  transform: scale(0.9);
+}
+
+.smartphones-container .phone-item {
+  background-color: white;
+}
+
+.smartphones-container .phone-item:hover .phone-img img {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.smartphones-container .phone-item .phone-img {
+  overflow: hidden;
+}
+
+.smartphones-container .phone-item .phone-detail h2 {
+  color: #7d008d;
+}
+
+.smartphones-container .phone-item .phone-detail .purchase-rating button {
+  background-color: #8000ff;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 3px 10px grey;
+  padding: 2% 5%;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.smartphones-container .phone-item .phone-detail .purchase-rating button:hover {
+  background-color: #b366ff;
+  color: #222;
+}
+
+.smartphones-container .phone-item .phone-detail .purchase-rating button:hover {
+  transform: scale(0.9);
+}
+
+.smartphones-container .phone-item .phone-detail .purchase-rating .info-btn {
+  background: skyblue;
+  color: #222;
+}
+
+.laptops-container .laptop-item {
+  background-color: white;
+}
+
+.laptops-container .laptop-item:hover .laptop-img img {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.laptops-container .laptop-item .laptop-img {
+  overflow: hidden;
+}
+
+.laptops-container .laptop-item .laptop-detail h2 {
+  color: #7d008d;
+}
+
+.laptops-container .laptop-item .laptop-detail .purchase-rating button {
+  background-color: #8000ff;
+  color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 3px 10px grey;
+  padding: 2% 5%;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.laptops-container .laptop-item .laptop-detail .purchase-rating button:hover {
+  background-color: #b366ff;
+  color: #222;
+}
+
+.laptops-container .laptop-item .laptop-detail .purchase-rating button:hover {
+  transform: scale(0.9);
+}
+
+.laptops-container .laptop-item .laptop-detail .purchase-rating .info-btn {
+  background: skyblue;
+  color: #222;
+}
+
+@media (max-width: 668px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 669px) and (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  html {
+    font-size: 90%;
+  }
+}

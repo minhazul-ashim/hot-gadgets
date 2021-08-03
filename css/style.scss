@@ -1,0 +1,152 @@
+@import 'config';
+
+// Banner Section
+
+.banner-container {
+
+
+        .banner-text {
+
+
+            h2 {
+
+                span {
+
+                    color: $SecondaryText;
+                    font-weight: bold;
+                }
+            }
+            button {
+
+                @include btns;
+                transition: 0.5s;
+                &:hover {
+
+                    transform:scale(0.9)
+                }
+            }
+        }
+    }
+
+
+
+    // Smartphones Section Styling
+
+    .smartphones-container {
+
+
+        .phone-item {
+
+            background-color: white;
+            
+            &:hover .phone-img img {
+
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+        .phone-img {
+
+            overflow: hidden;
+        }
+        .phone-detail {
+
+            h2 {
+
+                color: $itemsTitleColor;
+            }
+
+            .purchase-rating {
+
+
+                button {
+
+                    @include btns;
+                    transition:0.5s;
+                    &:hover {
+
+                        transform: scale(0.9);
+                    }
+                }
+                .info-btn {
+
+                    background: skyblue;
+                    color: textColor(skyblue)
+                }
+            }
+        }
+    }
+    }
+
+
+    // Laptop Section Styling
+
+    .laptops-container {
+
+        .laptop-item {
+
+            background-color: white;
+            &:hover .laptop-img img{
+
+                transform: scale((1.1));
+                transition: 0.5s;
+            }
+
+        .laptop-img {
+
+            overflow: hidden;
+        }
+        .laptop-detail {
+
+            h2 {
+
+                color: $itemsTitleColor;
+            }
+
+            .purchase-rating {
+
+                button {
+
+                    @include btns;
+                    transition: 0.5s;
+                    &:hover {
+
+                        transform: scale(0.9)
+                    }
+                }
+                .info-btn {
+
+                    background: skyblue;
+                    color: textColor(skyblue)
+                }
+            }
+        }
+    }
+    }
+
+
+
+    // Some Media Queries For Responsive Texts
+
+    @media (max-width: 668px) {
+
+        html {
+
+            font-size: 70%;
+        }
+    } 
+
+    @media (min-width: 669px) and (max-width: 992px) {
+
+        html {
+
+            font-size: 80%;
+        }
+    }
+
+    @media (min-width: 993px) and (max-width: 1200px) {
+
+        html {
+
+            font-size: 90%;
+        }
+    }

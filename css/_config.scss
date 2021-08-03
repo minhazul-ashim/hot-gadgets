@@ -1,0 +1,72 @@
+// Font Imports
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+// Utilities and Common custom CSS Classes
+
+.container {
+
+    width: 80%
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background: rgb(247, 241, 241);
+}
+
+
+section {
+
+    margin: 5% 0;
+}
+
+.section-title::after {
+
+        content: '';
+        background-color: rgb(238, 238, 4);
+        width: 15%;
+        height: 5px;
+        display: block;
+        position: absolute;
+        left: 43%;
+        border-radius: 20px;
+        margin: 1% 0;
+}
+// Variables
+
+$BtnColor : #8000ff;
+$PrimaryText : #333;
+$SecondaryText : #FFC107;
+$itemsTitleColor: #7d008d;
+
+
+// Functions
+
+@function textColor ($color) {
+
+    @if (lightness($color) > 70) {
+        @return #222;
+    } @else {
+        @return #ffffff;
+    }
+}
+
+// Mixins
+
+@mixin btns {
+
+    background-color: $BtnColor;
+    color: textColor($BtnColor);
+    border-radius: 15px;
+    box-shadow: 2px 3px 10px grey;
+    padding: 2% 5%;
+    font-weight: 600;
+
+    &:hover {
+
+        background-color: lighten($BtnColor, 20%);
+        color: textColor(lighten($BtnColor, 80%))
+    }
+}
+
